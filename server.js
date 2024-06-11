@@ -12,8 +12,7 @@ const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: "*" } }); 
 
 app.use(cors({
-  origin: 'http://127.0.0.1:5500' // Allow your development server
-  // You can also use a wildcard '*' to allow any origin
+  origin: *
 }));
 app.use(cookieParser());
 app.use(express.json());
