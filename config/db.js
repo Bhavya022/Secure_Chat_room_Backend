@@ -10,7 +10,6 @@ const pool = mysql.createPool({
   password: process.env.DB_PASSWORD.replace(/'/g, ''),
   database: process.env.DB_NAME.replace(/"/g, ''),  
   connectTimeout: 10000,  
-  acquireTimeout: 10000,  
   waitForConnections: true,
   queueLimit: 0,
   authPlugins: {
