@@ -12,7 +12,7 @@ const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: "*" } }); 
 
 app.use(cors({
-  origin: *
+  origin: "*"
 }));
 app.use(cookieParser());
 app.use(express.json());
